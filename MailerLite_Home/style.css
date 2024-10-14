@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: #068447;
+    --green-hover: #065B32;
+    --green-hover-bg: #cef3e1;
+    --gray: #333333;
+    --gray-hover: #7D7D7D;
+    --gray-hover-bg: rgba(125, 125, 125, 0.1);
+    --white-07: rgba(255, 255, 255, 0.7);
+    --white-02: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.mt-3 {
+    margin-top: .75rem !important;
+}
+
+.mt-4 {
+    margin-top: 1rem !important;
+}
+
+.mt-20 {
+    margin-top: 5rem !important;
+}
+
+.mt-40 {
+    margin-top: 10rem !important;
+}
+
+.mb-8 {
+    margin-bottom: 2rem !important;
+}
+
+.py-1 {
+    padding-top: .375rem !important;
+    padding-bottom: .375rem !important;
+}
+
+.px-1 {
+    padding-left: .375rem !important;
+    padding-right: .375rem !important;
+}
+
+.px-12 {
+    padding: 0 3rem !important;
+}
+
+.px-20 {
+    padding: 0 5rem !important;
+}
+
+.max-w-1536 {
+    max-width: 1536px;
+}
+
+#banner h1,
+#banner h1 span {
+    font-size: 2.25rem;
+    letter-spacing: -.025em;
+    line-height: 1.25;
+    font-weight: 700;
+    color: black;
+}
+
+#banner p {
+    font-size: 1.25rem;
+    line-height: 1.625;
+    overflow-wrap: break-word;
+}
+
+#banner div a {
+    padding: 1rem 2rem;
+    border-radius: .375rem;
+    border: 1px solid;
+    line-height: 1.25rem;
+    letter-spacing: .025em;
+    transition: all .15s cubic-bezier(.4, 0, .2, 1);
+    cursor: pointer;
+}
+
+#banner div a.btn-primary {
+    border-color: transparent;
+    background-color: var(--green);
+    color: white;
+}
+
+#banner div a.btn-secondary {
+    border-color: var(--gray);
+    color: var(--gray);
+}
+
+#banner div a.btn-primary:hover {
+    background-color: var(--green-hover);
+}
+
+#banner div a.btn-secondary:hover {
+    border-color: var(--gray-hover);
+    color: var(--gray-hover);
+    background-color: var(--gray-hover-bg);
+}
+
+#banner span {
+    color: var(--gray);
+    font-size: .875rem;
+}
+
+#cards {
+    background-image: url("https://www.mailerlite.com/img/containers/assets/gradients/02.jpg/84bc260ab00cb5f9439bc48b2d658740.webp");
+    background-size: cover;
+    border-radius: 0.75rem;
+}
+
+#cards .row>div:nth-child(2) {
+    position: relative;
+    top: -130px;
+}
+
+.links a {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    transition: all .15s cubic-bezier(.4, 0, .2, 1);
+    width: 90%;
+}
+
+#cards a:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.links span {
+    font-size: 1rem;
+    line-height: 1;
+    color: black;
+    font-weight: 600;
+    margin-left: calc(-.375rem / 2);
+    transition: all .15s cubic-bezier(.4, 0, .2, 1);
+    border-radius: .25rem;
+    display: flex !important;
+    align-items: center;
+}
+
+.links a:nth-child(1):hover span>span {
+    background-color: var(--white-07);
+
+}
+
+.links a:nth-child(2):hover span>span,
+.links a:nth-child(3):hover span>span {
+    background-color: var(--white-02);
+
+}
+
+.links svg {
+    width: 1rem;
+    height: 1rem;
+    transition: all .15s cubic-bezier(.4, 0, .2, 1);
+}
+
+.links a:hover span>svg {
+    margin-left: .25rem;
+}
+
+.links p {
+    color: var(--gray);
+    font-size: .875rem;
+}
+
+#cards img {
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: top;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    ;
+}
+
+#cards > div > div:nth-child(2){
+    display: flex !important;
+}
+
+#cards>div>div>a:nth-child(2)>img {
+    border: none;
+    box-shadow: none;
+}
+
+.links a.white span {
+    color: white;
+}
+
+.links a.white p {
+    color: var(--white-07);
+}
+
+#last.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    ;
+    column-gap: 5rem;
+    row-gap: .5rem;
+}
+
+#last a>span>span {
+    font-size: 1.125rem;
+}
+
+#last a>p {
+    font-size: 1rem;
+}
+
+#last.links a:hover span>span {
+    background-color: var(--green-hover-bg);
+
+}
+
+#divider {
+    border-top: 2px solid black;
+}
+
+#divider>div:nth-child(2) {
+    margin-top: -.75rem;
+
+}
+
+
+.dynamic-text {
+    position: absolute;
+    overflow: hidden;
+    height: 45px;
+}
+
+.item {
+    position: relative;
+    top: 0;
+    animation: move 8s infinite 2s cubic-bezier(.4, 0, .2, 1);
+    background-color: var(--green-hover-bg);
+    padding: 0 1rem;
+    border-radius: .5rem;
+    width: fit-content;
+    margin-bottom: .5rem;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: calc(-45px - 8px);
+    }
+
+    40% {
+        top: calc(-90px - 16px);
+    }
+
+    60% {
+        top: calc(-135px - 24px);
+    }
+
+    80% {
+        top: calc(-180px - 32px);
+    }
+}
+
+@media (max-width: 576px){
+    #banner > h1 > div{
+        height: 90px;
+    }
+    .dynamic-text{
+        margin-left: 0 !important;
+    }
+    #cards img{
+        max-height: 500px;
+    }
+}
+@media (min-width: 577px){
+    .dynamic-text{
+        margin-left: .5rem;
+    }
+    #cards img{
+        max-height: 500px;
+    }
+}
+@media (max-width: 639px) {
+    #last.grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #cards {
+        padding-bottom: 80px;
+    }
+
+}
+
+@media (min-width: 640px) {
+
+    #banner h1,
+    #banner h1 span {
+        font-size: 3rem;
+    }
+
+    #last.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 3rem;
+    }
+
+    #cards {
+        padding-bottom: 80px;
+    }
+    .dynamic-text{
+        height: 60px;
+    }
+    @keyframes move {
+        0% {
+            top: 0px;
+        }
+    
+        20% {
+            top: calc(-60px - 8px);
+        }
+    
+        40% {
+            top: calc(-120px - 16px);
+        }
+    
+        60% {
+            top:calc(-180px - 24px);
+        }
+    
+        80% {
+            top:calc(-240px - 32px);
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    #banner h1,
+    #banner h1 span {
+        font-size: 4rem;
+    }
+
+    #cards img{
+        max-height: 700px;
+    }
+
+    #last.grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .dynamic-text{
+        height: 80px;
+    }
+    @keyframes move {
+        0% {
+            top: 0px;
+        }
+    
+        20% {
+            top: calc(-80px - 8px);
+        }
+    
+        40% {
+            top: calc(-160px - 16px);
+        }
+    
+        60% {
+            top:calc(-240px - 24px);
+        }
+    
+        80% {
+            top:calc(-320px - 32px);
+        }
+    }
+}
